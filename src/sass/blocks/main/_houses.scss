@@ -1,0 +1,71 @@
+.houses {
+    margin-top: clamp(1.438rem, 0.682rem + 3.78vw, 3.75rem);
+    &__tab {
+        margin-top: clamp(0.438rem, -0.073rem + 2.55vw, 2rem);
+    }
+    &__content {
+        margin-top: clamp(3rem, 2.841rem + 0.8vw, 3.438rem);
+        .tab {
+            &__item {
+                display: none;
+                position: relative;
+                &-active {
+                    display: block;
+                }
+                &-prev, &-next {
+                    position: absolute;
+                    top: 30%;
+                    z-index: 100;
+                }
+                &-prev {
+                    left: 0;
+                }
+                &-next {
+                    right: 0; 
+                }
+            }
+        }
+    }
+    &__swiper {
+        /* border: 1px solid red; */
+        width: 100%;
+        height: 305px;
+        overflow: hidden;
+        &-wrapper {
+            display: flex;
+        }
+        &-slide {
+            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+            @media (max-width: 576px) {
+                gap: 3px;
+            }
+        }
+        &-pic {
+            width: 385px;
+            height: 218px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &-title {
+            font-size: 30px;
+            line-height: 1.47;  
+            @media (max-width: 576px) {
+                font-size: 20px;
+            }
+        }
+        &-text {
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+        }
+        
+    }
+}

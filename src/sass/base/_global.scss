@@ -1,0 +1,186 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: $secondary-color;
+}
+  
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.label {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.32;
+    color: #000;
+    background-color: $primary-color;
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.btn {
+    width: 209px;
+    padding: 17.8px 47.44px 17.8px 48.31px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.51;
+    color: $white-color;
+    white-space: nowrap;
+    background: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.47px;
+    transition: all .5s ease;
+    @media (max-width: 768px) {
+        width: 156px;
+        padding: 10.61px 29.55px 10.61px 28.5px; 
+        font-size: 16px;
+    }
+    svg {
+        display: block;
+        path {
+            transition: all .5s ease;
+        }
+    }
+    &:hover {
+        color: $secondary-color;
+        background: $primary-color;
+        svg {
+            path {
+                fill: $secondary-color;
+            }
+        }
+    }
+    &-yellow {
+        color: $secondary-color;
+        background: $primary-color;
+        svg {
+            path {
+                fill: $secondary-color;
+            }
+        }
+        &:hover {
+            color: $white-color;
+            background: $secondary-color;
+            svg {
+                path {
+                    fill: $white-color;
+                }
+            }
+        }
+    }
+    &-slider {
+        padding: 10px 12px;
+        width: 50px;
+        height: 45px;
+        transition: all .5s ease;
+        @media (max-width: 768px) {
+            width: 30px;
+            height: 28px; 
+            padding: 0;  
+        }
+        svg {
+            transition: all .5s ease;
+            path {
+                transition: all .5s ease;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    fill: $primary-color;
+                    stroke: $secondary-color;
+                }
+            }
+        }
+    }
+}
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin: 0 auto;
+    /* max-width: 270px; */
+    padding: 17px 76px 17px 76px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: $primary-color;
+    transition: all .5s ease;
+    svg {
+        path {
+            transition: all .5s ease;
+        }
+    }
+    &:hover {
+        background-color: $secondary-color;
+        color: $white-color;
+        svg {
+            path {
+                fill: $white-color;
+            }
+        }
+    }
+}
+
+.tab-btn {
+    display: inline-block;
+    padding: 15.53px 19px 15.53px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 0.87;
+    text-transform: uppercase;
+    color: $secondary-color;
+    background-color: $white-color;
+    border: 1px solid $primary-color;
+    border-right: 11px solid $primary-color;
+    transition: all .5s ease;
+    &:hover {
+        color: $primary-color;
+    }
+    @media (max-width: 576px) {
+        font-size: 13px;
+        line-height: 2.33;
+        padding: 3px 10.98px 0px 10.8px;
+    }
+}
+.tab-active {
+    background-color: $primary-color;
+    transition: all .5s ease;
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.title {
+    font-weight: 300;
+    color: $secondary-color;
+}
+.section-title {
+    font-size: 46px;
+    line-height: 0.98;
+    @media (max-width: 576px) {
+        font-size: 26px;
+        line-height: 1.73;
+    }
+}
+.text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.41;
+    color: $secondary-color
+}

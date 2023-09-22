@@ -1,0 +1,40 @@
+.seo {
+    margin: clamp(2.813rem, 2.098rem + 3.57vw, 5.313rem) 0 clamp(5rem, 4.643rem + 1.79vw, 6.25rem) 0;
+    &__title {
+        font-weight: 300;
+        font-size: 36px;
+        line-height: 1.25;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.5;
+    }
+    &__text {
+        margin-top: 26px;
+        line-height: 1.68;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 1.61;
+        }
+    }
+    &__link {
+        margin-top: 15px;
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.89;
+        color: $secondary-color;
+        border-bottom: 1px dashed #00142F;
+        cursor: pointer;
+        transition: all .5s ease;
+        &:hover {
+            color: $primary-color;
+            border-bottom: 1px dashed $primary-color;
+        }
+    }
+    #more {
+        display: none;
+        transition: all .5s ease;
+    }
+}

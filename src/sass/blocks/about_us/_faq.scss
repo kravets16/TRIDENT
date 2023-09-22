@@ -1,0 +1,113 @@
+.faq {
+    margin-top: clamp(3.438rem, 3.215rem + 1.11vw, 4.063rem);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: clamp(1.25rem, -18.75rem + 32.26vw, 6.25rem);
+    }
+    &__pic {
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+    &__content {
+        flex:  0 0 60%;
+        @media (max-width: 992px) {
+            flex:  0 0 100%;
+        }
+        &-title {
+            margin-bottom: 35px;
+            font-weight: 300;
+            font-size: 46px;
+            line-height: 0.98;
+            @media (max-width: 768px) {
+                font-size: 36px;
+            }
+        }
+    }
+    &__accordion {
+        &-title {
+            padding: 15px 0;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            cursor: pointer;
+            @media (max-width: 768px) {
+                padding: 10px 0;
+            }
+            h3 {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 2.5;
+                color: $secondary-color;
+                @media (max-width: 576px) {
+                    font-size: 15px;
+                    line-height: 2.5;
+                }
+            }
+            span {
+                margin: auto 0;
+                display: inline-flex;
+                position: relative;
+                width: 20px;
+                height: 20px;
+                background-color: transparent;
+                @media (max-width: 375px) {
+                    display: none;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $secondary-color;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 1px;
+                    height: 100%;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: $secondary-color;
+                    transition: transform 0.5s ease;
+                }
+            } 
+        }
+        &-text {
+            border-bottom: 0.5px solid rgba(#00142F, 0.24);
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.41;
+            max-height: 0;
+            overflow: hidden;
+            transition: all .5s ease;
+            @media (max-width: 576px) {
+                font-size: 14px;
+            }
+            p {
+                display: block;
+            }
+            div {
+                padding: 5px 60px 55px 30px;
+                @media (max-width: 576px) {
+                    padding: 0 0 30px 17px;
+                }
+            }
+        }
+    }
+    .active-title .faq__accordion-title{
+        span {
+            &::after {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }
+    }
+    /* .active-text .faq__accordion-text {
+        max-height: 300px;
+    } */
+}

@@ -1,0 +1,22 @@
+.order__hero {
+    &-title{
+        padding: clamp(3rem, 1.419rem + 6.75vw, 6.563rem) 10px 0 10px;
+        font-weight: 500;
+        color: $white-color;
+        text-align: center;
+    }
+    &-text {
+        max-width: 497px;
+        margin: 0 auto;
+        padding: clamp(0.375rem, -0.235rem + 2.6vw, 1.75rem) 10px clamp(3.438rem, -0.723rem + 17.75vw, 12.813rem) 10px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.47;
+        text-align: center;
+        color: $white-color;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 1.47;
+        }
+    }
+}

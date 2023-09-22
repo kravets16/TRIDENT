@@ -1,0 +1,119 @@
+.footer {
+    background-color: $secondary-color;
+    &__wrapper {
+        padding-top: clamp(1.875rem, 1.23rem + 3.23vw, 3.75rem);
+        display: flex;
+        gap: clamp(3.125rem, -14.203rem + 36.1vw, 14rem);
+        @media (max-width:768px) {
+            justify-content: space-between;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 11px;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.2;
+        &-link {
+            display: flex;
+            gap: 18px;
+            color: $white-color;
+            white-space: nowrap;
+            transition: all .5s ease;
+            &:hover {
+                color: $primary-color;
+                svg {
+                    path {
+                        fill: $primary-color;
+                    }
+                }
+            }
+            svg {
+                path {
+                    transition: all .5s ease;
+                }
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        gap: clamp(3.125rem, -10.319rem + 28.01vw, 11.563rem);
+        @media (max-width:576px) {
+            display: none;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            @media (max-width:768px) {
+                &:nth-child(3) {
+                    display: none;
+                }
+            }
+        }
+        &-link {
+            font-weight: 300;
+            font-size: 15px;
+            line-height: 1.2;
+            color: $white-color;
+            transition: all .5s ease;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    &__row {
+        padding-top: clamp(2.375rem, 0.399rem + 5.49vw, 4.688rem);
+        padding-bottom: clamp(1.563rem, 1.455rem + 0.54vw, 1.875rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: 480px) {
+            flex-direction: column-reverse;
+            justify-content: flex-start;
+            align-items: start;
+            gap: 50px;
+        }
+    }
+    &__copyright {
+        display: flex;
+        gap: 50px;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 1.25;
+        color: rgba( $white-color, .65);
+        transition: all .5s ease;
+        &-link {
+            color: rgba( $white-color, .65);
+            transition: all .5s ease;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        &-link {
+            svg {
+                path {
+                    transition: all .5s ease;
+                }
+            }
+            &:hover {
+                svg {
+                    path {
+                        fill: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}

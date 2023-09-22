@@ -1,0 +1,39 @@
+/* ===============base=============== */
+@import 'base/reset';
+@import 'base/swiper';
+@import 'base/swiper-vars';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/global';
+
+/* ==========blocks=========== */
+/* main */
+@import 'blocks/main/header';
+@import 'blocks/main/hero';
+@import 'blocks/main/houses';
+@import 'blocks/main/check';
+@import 'blocks/main/benefits';
+@import 'blocks/main/order';
+@import 'blocks/main/carusel';
+@import 'blocks/main/seo';
+@import 'blocks/main/footer';
+/* gallery */
+@import 'blocks/gallery/gallery';
+/* about us */
+@import 'blocks/about_us/hero';
+@import 'blocks/about_us/benefits';
+@import 'blocks/about_us/faq';
+/* interior */
+@import 'blocks/interior/interior';
+/* contact */
+@import 'blocks/contact/location';
+@import 'blocks/contact/request';
+/* order*/
+@import 'blocks/order/hero';
+@import 'blocks/order/request';
+
+
+.none {
+    display: none;
+}
+

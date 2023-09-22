@@ -1,0 +1,102 @@
+.order {
+    padding-top: clamp(4.125rem, 3.329rem + 3.98vw, 6.438rem);
+    padding-bottom: clamp(5.813rem, 5.597rem + 1.08vw, 6.438rem);
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        border: 1px solid #F5F5F5;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        background:  url('../img/main/order__bg.png') center center/cover no-repeat;
+        @media (max-width: 992px) {
+            background:linear-gradient(46.26deg, rgba(236, 237, 240, 0.767) 35.4%, rgba(255, 255, 255, 0.842) 68.29%),  url('../img/main/order__bg.png') center center/cover no-repeat;
+            
+        }
+        @media (max-width: 576px) {
+            position: relative;
+        } 
+    }
+   &__content {
+    padding-left: 44.75px;
+    flex: 0 0 50%;
+    @media (max-width: 768px) {
+        flex: 0 0 70%;
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+        padding: 23.88px 13.11px 56.75px 13.11px;
+        margin: 0 auto;
+        flex: 0 0 0;
+        text-align: center;
+    }
+    &-title {
+        margin-top: 56.83px;
+        max-width: 390px;
+        @media (max-width: 768px) {
+            font-size: 26px;
+            line-height: 1.15;
+        }
+        @media (max-width: 576px) {
+            margin: 0;
+            width: 100%;
+        }
+    }
+    &-text {
+        margin-top: 13.38px;
+        max-width: 380px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 1.61;
+        }
+        @media (max-width: 576px) {
+            margin-top: 24px;
+            width: clamp(16.875rem, 8.281rem + 42.97vw, 23.75rem);
+        }
+    }
+    &-btn {
+        margin-top: 33.6px;
+        margin-bottom: 35.51px;
+        @media (max-width: 576px) {
+            margin: 311px  auto 0 auto;
+        }
+    }
+   } 
+   &__file {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        @media (max-width: 576px) {
+            position: absolute;
+            top: 50%;
+            left: auto;
+        }
+        &-link {
+            position: relative;
+            display: block;
+            margin: 0 auto;
+            width: 63.43px;
+            height: 63.43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $primary-color;
+            border-radius: 50%;
+            /* border: 7.69px solid rgba( #F4D059, 0.34); */
+            &:hover {
+                &::before {
+                    background-color: rgba( $secondary-color, 0.05);
+                }
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                width: 78.8px;
+                height: 78.8px;
+                background-color: rgba( $primary-color, 0.34);
+                border-radius: 50%;
+                transition: all .5s ease;
+            }
+        }
+   }
+}

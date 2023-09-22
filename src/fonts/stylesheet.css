@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-ExtraLight.ttf');
+    src: local('Lato-ExtraLight'), local('Lato-ExtraLight'),
+        url('Lato-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Light.eot');
+    src: local('Lato Light'), local('Lato-Light'),
+        url('Lato-Light.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Light.woff') format('woff'),
+        url('Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.eot');
+    src: local('Lato Regular'), local('Lato-Regular'),
+        url('Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Regular.woff') format('woff'),
+        url('Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Medium.eot');
+    src: local('Lato Medium'), local('Lato-Medium'),
+        url('Lato-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Medium.woff') format('woff'),
+        url('Lato-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Bold.eot');
+    src: local('Lato Bold'), local('Lato-Bold'),
+        url('Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Lato-Bold.woff') format('woff'),
+        url('Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+

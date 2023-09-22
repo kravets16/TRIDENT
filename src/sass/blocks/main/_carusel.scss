@@ -1,0 +1,42 @@
+.carusel {
+    &__swiper {
+        position: relative;
+        margin: 0 auto;
+        max-width: 1440px;
+        height: 314px;
+        overflow: hidden;
+        @media (max-width: 576px) {
+            margin: 0 10px 0 10px;
+            height: clamp(12.563rem, 3.734rem + 44.14vw, 19.625rem);
+        }
+        &-slide {
+            width: 558px;
+            height: 314px;
+            @media (max-width: 576px) {
+                height: clamp(12.563rem, 3.734rem + 44.14vw, 19.625rem);
+            }
+        }
+        &-prev, &-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 997;
+        }
+        &-prev {
+            left: 297px;
+            @media (max-width: 1439px) {
+                left: 0;
+            }
+        }
+        &-next {
+            right: 297px;
+            @media (max-width: 1439px) {
+                right: 0;
+            }
+        }
+        .swiper-slide-prev, .swiper-slide-next {
+            opacity: 0.4;
+            filter: blur(3px);
+        }
+    }
+}
